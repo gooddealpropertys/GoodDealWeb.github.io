@@ -309,10 +309,10 @@
 
         .formbtn {
             font-family: 'Baloo Bhai 2', cursive;
-            margin: 33px -82px 0px 7px;
+            margin: 36px -120px 0px 0px;
             background-color: white;
             color: rgb(0, 0, 0);
-            padding: 3px 13px;
+            padding: 5px 14px;
             margin-left: 27%;
             border-radius: 5px;
             cursor: pointer;
@@ -330,7 +330,7 @@
             margin-left: 150px;
             height: 30px;
             border-radius: 2px;
-            border-color: rgb(6, 128, 57);
+            border-color: rgb(218 127 239);
         }
 
 
@@ -419,29 +419,32 @@
             line-height: 1em;
         }
 
-        .fa {
+        /* .fa {
             padding: 20px;
             font-size: 30px;
             width: 50px;
             text-align: center;
             text-decoration: none;
-            background-color:#2fe38e;
-        }
+            background-color: #2fe38e;
+        } */
 
         /* Add a hover effect if you want */
         .fa:hover {
-            opacity: 0.7;
+            opacity: 0.6;
         }
 
         .fa {
             /* display: inline-block; */
+            padding: 20px;
+            width: 50px;
+            text-decoration: none;
             font: normal normal normal 14px/1 FontAwesome;
             font-size: 20px;
             text-rendering: auto;
-            margin: 36px -2px 30px;
+            margin: 23px -2px 30px;
             -webkit-font-smoothing: antialiased;
-            padding-right: 87px;
-            padding-left: 87px;
+            padding-right: 35px;
+            padding-left: 75px;
             /* -moz-osx-font-smoothing: grayscale; */
         }
 
@@ -546,14 +549,14 @@
             float: right;
             width: 40%;
             animation: example1 12s infinite alternate;
-            
+
         }
 
         #second img {
             filter: invert(0%);
             margin-left: 2%;
             width: 326px;
-            visibility:hidden;
+            visibility: hidden;
         }
 
         /* #second {
@@ -567,30 +570,33 @@
 
 
         @keyframes example1 {
-            0%   {
+            0% {
                 background: url(img/award.jpg);
                 background-size: cover;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
-            30%  {
+
+            30% {
                 background: url(img/officeworking.jpeg);
                 background-size: cover;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
-            50%  {
+
+            50% {
                 background: url(img/office.jpeg);
                 background-size: cover;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
+
             100% {
                 background: url(img/interview.jpeg);
                 background-size: contain;
                 background-repeat: no-repeat;
             }
-}
+        }
 
         #third {
             color: #dff4fa;
@@ -598,19 +604,19 @@
             width: 49%;
         }
 
-        /* #fourth {
+        #fourth {
             color: #dff4fa;
             float: right;
             width: 40%;
             margin-top: -21%;
-        } */
+        }
 
-        /* #fourth img {
+        #fourth img {
             filter: invert(0%);
             margin-left: 2%;
             width: 326px;
-
-        } */
+            /* background: url(img/office.jpeg); */
+        }
 
         div .ex {
             position: relative;
@@ -761,8 +767,30 @@
             width: 13%;
         }
 
-       
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 8px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
 
+        .my-float {
+            margin-top: -4px;
+            margin-left: -172%;
+        }
+
+        .fa-whatsapp:before {
+            content: "\f232";
+            margin-left: 85%;
+        }
 
         html {
             scroll-behavior: smooth;
@@ -794,11 +822,12 @@
                     <!-- <div class="newlogo">
                         <img src="img/logo2.png" id="newlogo" alt="">
                     </div> -->
-                    <h3 class="knockout" style="font-family: 'Noto Sans', sans-serif; font-size: 45px;">GOOD DEAL PROPERTY DEALER
+                    <h3 class="knockout" style="font-family: 'Noto Sans', sans-serif; font-size: 45px;">GOOD DEAL
+                        PROPERTY DEALER
                         <br><span style="font-size: 30px; font-family: 'Yellowtail', cursive;">"Your Dreams, Our
                             Efforts"</span>
                     </h3>
-                    <h2 id="trademark" style="float: right; margin-right: 21.8%; margin-top: -9%;">™</h2>
+                    <h2 id="trademark" style="float: right; margin-right: 21.8%; margin-top: -10%;">™</h2>
                 </div>
 
                 <div id="navlist">
@@ -846,9 +875,9 @@
                         </ul>
                         </p>
                     </div>
-                    <!-- <div id="fourth" class="container2">
-                        <img src="img/interview.jpeg" alt="">
-                    </div> -->
+                    <div id="fourth" class="container2">
+                        <img src="img/office.jpeg" alt="">
+                    </div>
 
                 </div>
 
@@ -858,7 +887,8 @@
     <h2 id="contact_head">CONTACT US</h2>
 
     <div class="container" id="contact">
-        <p style="margin-left: 130px;">BOOK AN APPOINTMENT</p>
+        <img src="img/logo2.png" alt="" style="width: 15%; margin-left: 1%;">
+        <p style="margin-left: 130px; margin-top: -12%;">BOOK AN APPOINTMENT</p>
         <p style=" font-size: 13px; color: red; margin-left: 180px;">Fields marked with * are mandatory</p>
 
 
@@ -901,15 +931,15 @@
 
     <div class="mySlides" id="projects">
         <video width="600" controls style="    margin-top: 11%;
-        margin-left: 28%;"> 
-            <source src="img/paradisevideo.mp4" type="video/mp4" >
+        margin-left: 28%;">
+            <source src="img/paradisevideo.mp4" type="video/mp4">
 
-          
-        <img src="img/p1.jpg" style="width:100%">
-        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black"
-            style="text-align: center;font-size: 22px;">
-            SAI WORLD EMPIRE (KHARGHAR)
-        </div>
+
+            <img src="img/p1.jpg" style="width:100%">
+            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black"
+                style="text-align: center;font-size: 22px;">
+                SAI WORLD EMPIRE (KHARGHAR)
+            </div>
     </div>
 
     <div class="mySlides">
@@ -999,7 +1029,7 @@
             BUNGALOW (LONAVALA) (2)
         </div>
     </div>
-    
+
     <div class="mySlides">
         <img src="img/swc.jpg" style="width:100%">
         <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"
@@ -1013,9 +1043,9 @@
             style="text-align: center;font-size: 22px;">
             SAI WORLD CITY (PANVEL)
         </div>
-        
-    </video>   
-  
+
+        </video>
+
     </div>
     <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
     <button class="next" onclick="plusDivs(1)">&#10095;</button>
@@ -1029,19 +1059,21 @@
     <div>
         <!-- Add font awesome icons -->
         <a href="https://m.facebook.com/Good-Deal-Property-Dealers-1694892924067883/?ref=page_internal&mt_nav=0"
-            target="_blank" class="fa fa-facebook"></a>
+            target="_blank" class="fa fa-facebook" style="border-radius: 30px; margin-left: 13%;"></a>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-            <a href="https://api.whatsapp.com/send?phone=919324535317&app=facebook&entry_point=page_cta" class="float" target="_blank">
+        <a href="https://wa.me/message/D3AICJ2A4GJEI1" class="float" target="_blank">
             <i class="fa fa-whatsapp my-float"></i>
-            </a>
-        <a href="https://twitter.com/goodealproperty" class="fa fa-twitter" target="_blank"></a>
+        </a>
+        <a href="https://twitter.com/goodealproperty" class="fa fa-twitter" target="_blank"
+            style="border-radius: 30px; margin-left: 2%;"></a>
 
-        <a href="https://www.instagram.com/gooddealpropertys/" class="fa fa-instagram" target="_blank"></a>
+        <a href="https://www.instagram.com/gooddealpropertys/" class="fa fa-instagram" target="_blank"
+            style="border-radius: 30px; margin-left: 2%;"></a>
         <a href="https://www.youtube.com/channel/UCxsdcYd3DRa8hTq4T_8wNCA/featured" class="fa fa-youtube"
-            target="_blank"></a>
+            target="_blank" style="border-radius: 30px; margin-left: 2%;"></a>
         <a href="https://www.linkedin.com/in/good-deal-property-dealers-12187785/" class="fa fa-linkedin"
-            target="_blank"></a>
-            
+            target="_blank" style="border-radius: 30px; margin-left: 2%;"></a>
+
     </div>
     <!-- <img src="img/building2.png" class="building" style="filter: invert(0);" alt=""> -->
     <h1 class="build">
@@ -1059,9 +1091,10 @@
     </button>
     <br>
     <hr>
-    
+
     <div class="channel">
-        <h2 style="text-align: center;" id="channel_head">CHANNEL PARTNERS</h2><hr>
+        <h2 style="text-align: center;" id="channel_head">CHANNEL PARTNERS</h2>
+        <hr>
         <img src="img/paradisegroup.png" id="paradiselogo" alt=""
             style=" width: 12%; margin-left: 8%;padding-right: 2%;">
         <img src="img/arihantlogo.png" id="arihantlogo" alt="" style=" width: 12%;padding-right: 2%;">
