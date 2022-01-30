@@ -192,7 +192,7 @@
         .build {
             color: white;
             position: absolute;
-            top: 30.64%;
+            top: 34.80%;
             left: 32px;
             min-width: 20px;
             min-height: fit-content;
@@ -201,11 +201,11 @@
 
         .build img {
             min-width: 200px;
-            min-height: fit-content;
-
-            width: 67%;
+            /* min-height: fit-content; */
+            width: 58%;
             filter: invert(0%);
             display: block;
+            opacity: 85%;
         }
 
         .flick {
@@ -284,7 +284,7 @@
             background-repeat: no-repeat;
             background-size: 50% 50%, 50% 50%;
             background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-            background-image: linear-gradient(#88d8b0, #27c752), linear-gradient(#0cbac3, #0b7ba7), linear-gradient(#88d8b0, #3ed867), linear-gradient(#0cbac3, #0b7ba7);
+            background-image: linear-gradient(#88d8b0, #39d9b8), linear-gradient(#dc92ed, #d53ef7), linear-gradient(#88d8b0, #39d9b8), linear-gradient(#dc92ed, #d53ef7);
             -webkit-animation: rotate 4s linear infinite;
             animation: rotate 4s linear infinite;
         }
@@ -344,7 +344,7 @@
 
         .border {
             padding: 5px;
-            background: linear-gradient(110deg, #91e4f8 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #c8e7e5 34%, #88d8b0 34%);
+            background: linear-gradient(110deg, #d53ef7 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #c8e7e5 34%, #39d9b8 34%);
             background-size: 400% 400%;
             height: 440px;
             background-position: 25% 50%;
@@ -355,6 +355,7 @@
         .inner-cutout {
             padding: 40px 0px;
             display: block;
+            background: url(img/lines.jpg);
             background-color: #5d5f5f;
             /*#ff6f69*/
             margin: 2%;
@@ -362,10 +363,9 @@
             min-width: 480px;
             min-height: fit-content;
             height: 300px;
-            background: radial-gradient(#19aace, #033619);
+            background: radial-gradient(#a7a6bb, #3c32a5);
             background-size: 300%;
             background-position: 50% 50%;
-
         }
 
         .knockout {
@@ -425,7 +425,7 @@
             width: 50px;
             text-align: center;
             text-decoration: none;
-            background-color: #C5E7D7;
+            background-color:#2fe38e;
         }
 
         /* Add a hover effect if you want */
@@ -440,8 +440,8 @@
             text-rendering: auto;
             margin: 36px -2px 30px;
             -webkit-font-smoothing: antialiased;
-            padding-right: 200px;
-            padding-left: 200px;
+            padding-right: 87px;
+            padding-left: 87px;
             /* -moz-osx-font-smoothing: grayscale; */
         }
 
@@ -456,8 +456,19 @@
             color: white;
         }
 
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
         .fa-instagram {
             background: #D93D76;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
             color: white;
         }
 
@@ -467,18 +478,18 @@
             text-align: center;
             min-height: fit-content;
             min-width: 170px;
-            background-color: #88D8B0;
-            margin: 195px 450px 0px 450px;
-            animation: border 3s infinite;
+            background-color: #39d9b8;
+            margin: 195px 500px 0px 500px;
+            animation: border 2s infinite;
             border-radius: 13px;
         }
 
         #contact_head {
             border: 2px solid white;
-            margin: 1704px 450px 0px 450px;
+            margin: 1704px 500px 0px 500px;
             text-align: center;
-            background-color: #88D8B0;
-            animation: border 3s infinite;
+            background-color: #39d9b8;
+            animation: border 2s infinite;
             border-radius: 13px;
         }
 
@@ -491,9 +502,20 @@
             border-radius: 13px;
         } */
 
+        #channel_head {
+            border: 2px solid white;
+            margin: 10px 0px 0px 0px;
+            text-align: center;
+            background-color: #39d9b8;
+            animation: border 2s infinite;
+            border-radius: 1px;
+        }
+
         @keyframes border {
             50% {
-                border-color: #000000;
+                /* border-color: #000000; */
+                color: #ffffff;
+                background-color: #e574ff;
             }
         }
 
@@ -519,16 +541,56 @@
         }
 
         #second {
+            /* border: 2px solid red; */
             color: #dff4fa;
             float: right;
             width: 40%;
+            animation: example1 12s infinite alternate;
+            
         }
 
         #second img {
             filter: invert(0%);
             margin-left: 2%;
             width: 326px;
+            visibility:hidden;
         }
+
+        /* #second {
+            margin-top: 33px;
+            position: relative;
+        } */
+
+        /* #second img {
+            animation: animA 4s infinite alternate;
+        } */
+
+
+        @keyframes example1 {
+            0%   {
+                background: url(img/award.jpg);
+                background-size: cover;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            30%  {
+                background: url(img/officeworking.jpeg);
+                background-size: cover;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            50%  {
+                background: url(img/office.jpeg);
+                background-size: cover;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            100% {
+                background: url(img/interview.jpeg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+}
 
         #third {
             color: #dff4fa;
@@ -536,19 +598,19 @@
             width: 49%;
         }
 
-        #fourth {
+        /* #fourth {
             color: #dff4fa;
             float: right;
             width: 40%;
             margin-top: -21%;
-        }
+        } */
 
-        #fourth img {
+        /* #fourth img {
             filter: invert(0%);
             margin-left: 2%;
             width: 326px;
 
-        }
+        } */
 
         div .ex {
             position: relative;
@@ -595,11 +657,10 @@
         }
 
         #navlist {
-            min-width: 170px;
-
+            min-width: 1025px;
             overflow: hidden;
-            background-color: #005658;
-            /* width: 1357px; */
+            background-color: #4b448d;
+            width: 1357px;
             margin: 3% 0% 0% -1%;
             position: sticky;
         }
@@ -654,15 +715,54 @@
             bottom: 20px;
             right: 20px;
             display: none;
-            background-color: lightskyblue;
-            border-radius: 10px;
-            border-color: rgb(0, 56, 73);
+            background-color: #39d9b8;
+            border-radius: 12px;
+            border-color: rgb(213 62 247);
         }
 
         #btn-back-to-top:hover {
             cursor: pointer;
             opacity: 0.7;
         }
+
+        #newlogo {
+            width: 19%;
+            margin-top: -68%;
+            margin-bottom: -28%;
+            filter: invert(0);
+        }
+
+        .newlogo {
+            margin-left: 42%;
+            width: 60%;
+        }
+
+        #maharera {
+            display: contents;
+            background: none;
+        }
+
+        #maharera:hover {
+            cursor: pointer;
+        }
+
+        #rera {
+            width: 130%;
+            margin-top: 102%;
+            margin-left: 95%;
+            position: sticky;
+        }
+
+        /* #pattern{
+            opacity: 90%;
+        } */
+
+        #lakhanilogo {
+            width: 13%;
+        }
+
+       
+
 
         html {
             scroll-behavior: smooth;
@@ -678,20 +778,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 
 <body>
+
 
     <header class="header"> <a id="button"></a>
         <div class="btn-shine" target="_blank">MAHA RERA No.: A52000000368</div>
         <!-- left box for logo -->
         <div class="left" id="home">
             <div class="border">
-                <div class="inner-cutout">
+                <div class="inner-cutout" id="pattern">
                     <img src="img/logopng1.png" alt="logo">
-                    <h3 class="knockout">Good Deal Property Dealers™<br><span
-                            style="font-size: 30px; font-family: 'Baloo Bhai 2', cursive;">"Your dreams, our
-                            efforts"</span> </h3>
-
+                    <!-- <div class="newlogo">
+                        <img src="img/logo2.png" id="newlogo" alt="">
+                    </div> -->
+                    <h3 class="knockout" style="font-family: 'Noto Sans', sans-serif; font-size: 45px;">GOOD DEAL PROPERTY DEALER
+                        <br><span style="font-size: 30px; font-family: 'Yellowtail', cursive;">"Your Dreams, Our
+                            Efforts"</span>
+                    </h3>
+                    <h2 id="trademark" style="float: right; margin-right: 21.8%; margin-top: -9%;">™</h2>
                 </div>
 
                 <div id="navlist">
@@ -703,6 +810,7 @@
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gooddealpropertys@gmail.com" target="_blank"
                         style="text-decoration: none;">Email Us</a>
                     <a href="https://g.page/good-deal-property?share" target="_blank">Locate Us</a>
+                    <a href="#channel_head">Channel Partners</a>
                 </div>
 
 
@@ -738,11 +846,13 @@
                         </ul>
                         </p>
                     </div>
-                    <div id="fourth" class="container2">
-                        <img src="img/award.jpg" alt="">
-                    </div>
+                    <!-- <div id="fourth" class="container2">
+                        <img src="img/interview.jpeg" alt="">
+                    </div> -->
 
                 </div>
+
+
     </header>
 
     <h2 id="contact_head">CONTACT US</h2>
@@ -772,6 +882,13 @@
                         <option value="shopSell">Sell a shop</option>
                         <option value="shopRent">Rent a shop</option>
                         <option value="shopPurchase">Purchase a shop</option>
+                        <option value="shopPurchase">Under Construction Projects</option>
+                        <option value="shopPurchase">Residential Projects</option>
+                        <option value="shopPurchase">Commericial Projects</option>
+                        <option value="shopPurchase">Pre Launch Projects</option>
+                        <option value="shopPurchase">Investor Propertys</option>
+                        <option value="shopPurchase">Bungalow Plots</option>
+                        <option value="shopPurchase">Ready Bungalow</option>
                         <option value="Other" selected>Other</option>
                     </select>
                 </label>
@@ -783,6 +900,11 @@
 
 
     <div class="mySlides" id="projects">
+        <video width="600" controls style="    margin-top: 11%;
+        margin-left: 28%;"> 
+            <source src="img/paradisevideo.mp4" type="video/mp4" >
+
+          
         <img src="img/p1.jpg" style="width:100%">
         <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black"
             style="text-align: center;font-size: 22px;">
@@ -822,6 +944,63 @@
         </div>
     </div>
     <div class="mySlides">
+        <img src="img/emperia1.jpeg" style="width:100%">
+        <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"
+            style="text-align: center;font-size: 22px;">
+            AKSHAR EMPERIA GARDEN (RASAYANI)
+        </div>
+    </div>
+    <div class="mySlides">
+        <img src="img/emperia2.jpeg" style="width:100%">
+        <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"
+            style="text-align: center;font-size: 22px;">
+            AKSHAR EMPERIA GARDEN (RASAYANI)
+        </div>
+    </div>
+    <div class="mySlides">
+        <img src="img/emperiaTownship.jpeg" style="width:100%">
+        <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"
+            style="text-align: center;font-size: 22px;">
+            EMPERIA TOWNSHIP
+        </div>
+    </div>
+    <div class="mySlides">
+        <img src="img/24high.jpeg" style="width:100%">
+        <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"
+            style="text-align: center;font-size: 22px;">
+            24 HIGH
+        </div>
+    </div>
+    <div class="mySlides">
+        <img src="img/24high1.jpg" style="width:100%">
+        <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"
+            style="text-align: center;font-size: 22px;">
+            24 HIGH
+        </div>
+    </div>
+    <div class="mySlides">
+        <img src="img/shreejidivine.jpeg" style="width:100%">
+        <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"
+            style="text-align: center;font-size: 22px;">
+            SHREEJI DIVINE (KHARGHAR)
+        </div>
+    </div>
+    <div class="mySlides">
+        <img src="img/bungalowlonavala.jpg" style="width:100%">
+        <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"
+            style="text-align: center;font-size: 22px;">
+            BUNGALOW (LONAVALA) (1)
+        </div>
+    </div>
+    <div class="mySlides">
+        <img src="img/bungalowlonavala1.jpg" style="width:100%">
+        <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"
+            style="text-align: center;font-size: 22px;">
+            BUNGALOW (LONAVALA) (2)
+        </div>
+    </div>
+    
+    <div class="mySlides">
         <img src="img/swc.jpg" style="width:100%">
         <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"
             style="text-align: center;font-size: 22px;">
@@ -834,6 +1013,9 @@
             style="text-align: center;font-size: 22px;">
             SAI WORLD CITY (PANVEL)
         </div>
+        
+    </video>   
+  
     </div>
     <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
     <button class="next" onclick="plusDivs(1)">&#10095;</button>
@@ -841,21 +1023,32 @@
     <!-- <p id="project_head">PROJECTS</p> -->
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4483475502398!2d73.06101171490072!3d19.044015287106312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c349749a6fb5%3A0xab9f615405214355!2sGood%20Deal%20Property!5e0!3m2!1sen!2sin!4v1643385907304!5m2!1sen!2sin"
-        width="600" height="450" style="border:0; border: 0;
-    margin-top: 19%;
-    margin-left: 52%;" allowfullscreen="" loading="lazy"></iframe>
+        width="600" height="450" style="border:0; border: 0; margin-top: 19%; margin-left: 52%;" allowfullscreen=""
+        loading="lazy"></iframe>
 
     <div>
         <!-- Add font awesome icons -->
         <a href="https://m.facebook.com/Good-Deal-Property-Dealers-1694892924067883/?ref=page_internal&mt_nav=0"
             target="_blank" class="fa fa-facebook"></a>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            <a href="https://api.whatsapp.com/send?phone=919324535317&app=facebook&entry_point=page_cta" class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+            </a>
+        <a href="https://twitter.com/goodealproperty" class="fa fa-twitter" target="_blank"></a>
+
+        <a href="https://www.instagram.com/gooddealpropertys/" class="fa fa-instagram" target="_blank"></a>
         <a href="https://www.youtube.com/channel/UCxsdcYd3DRa8hTq4T_8wNCA/featured" class="fa fa-youtube"
             target="_blank"></a>
-        <a href="https://www.instagram.com/gooddealpropertys/" class="fa fa-instagram" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/good-deal-property-dealers-12187785/" class="fa fa-linkedin"
+            target="_blank"></a>
+            
     </div>
+    <!-- <img src="img/building2.png" class="building" style="filter: invert(0);" alt=""> -->
     <h1 class="build">
         <img src="img/building.png" alt="" class="bulding" style="filter:invert(0%);">
     </h1>
+
+
     <div id="proprietor" class="prop">
         <p><img src="img/prop.png" alt=""> MANISH TALREJA <img src="img/phone.png" alt=""> +91 9324535317</p>
     </div>
@@ -864,8 +1057,26 @@
         <!-- <i class="fas fa-arrow-up"></i> -->
         ⬆
     </button>
-
-
+    <br>
+    <hr>
+    
+    <div class="channel">
+        <h2 style="text-align: center;" id="channel_head">CHANNEL PARTNERS</h2><hr>
+        <img src="img/paradisegroup.png" id="paradiselogo" alt=""
+            style=" width: 12%; margin-left: 8%;padding-right: 2%;">
+        <img src="img/arihantlogo.png" id="arihantlogo" alt="" style=" width: 12%;padding-right: 2%;">
+        <img src="img/lakhanis.png" id="lakhanilogo" alt="" style=" width: 9%;padding-right: 2%;">
+        <img src="img/platinumlogo.jpg" id="platinumlogo" alt="" style="width: 9;padding-right: 2%;">
+        <img src="img/emperialogo.jpeg" id="emperialogo" alt="" style="width: 12%;padding-right: 2%;">
+        <img src="img/akshar.jpg" id="aksharlogo" alt="" style="width: 12%;"><br><br><br>
+        <img src="img/dreamdigitlogo.png" id="dreamlogo" alt="" style=" width: 9%; margin-left: 12%; padding-right: 2%">
+        <img src="img/24highlogo.jpg" id="24highlogo" alt="" style="width: 9%; padding-right: 2%;">
+        <img src="img/bhagwati.jpg" id="bhagwatilogo" alt="" style="width: 9%;padding-right: 2%;">
+        <img src="img/vishwagreen.jfif" id="vishwalogo" alt="" style="width: 9%;padding-right: 2%;">
+        <img src="img/mahaavit.png" id="mahaavirlogo" alt="" style="width: 9%;padding-right: 2%;">
+        <img src="img/kamdhenu.png" id="kaamdhenulogo" alt="" style="width: 9%; padding-right: 2%;">
+        <img src="img/runwal.jpg" id="runwallogo" alt="" style="width: 9%;">
+    </div>
     <script>
         var form = document.getElementById('sheetdb-form');
         form.addEventListener("submit", e => {
@@ -908,8 +1119,8 @@
 
         function scrollFunction() {
             if (
-                document.body.scrollTop > 20 ||
-                document.documentElement.scrollTop > 20
+                document.body.scrollTop > 8 ||
+                document.documentElement.scrollTop > 8
             ) {
                 mybutton.style.display = "block";
             } else {
